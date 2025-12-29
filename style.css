@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8FAFC;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.accent {
+    color: #2563EB;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #0F172A;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #334155;
+}
+
+p {
+    font-size: 1rem;
+    color: #334155;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0F172A;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #2563EB;
+}
+
+/* HERO */
+.hero {
+    background-color: #FFFFFF;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.hero-text p {
+    margin-top: 15px;
+}
+
+.hero-image img {
+    width: 300px;
+    border-radius: 60%;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.35);
+    transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+/* ABOUT */
+#about {
+    padding: 80px 50px;
+    background-color: #FFFFFF;
+}
+
+.about-container {
+    background-color: #FFFFFF;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-text {
+    border-left: 6px solid #2563EB;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.skills-show {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+.skill-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+
+
+/* CONTACT */
+#contact {
+    background-color: #FFFFFF;
+    padding: 80px 50px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-card {
+    margin-top: 30px;
+    background:#2563EB ;
+    padding: 30px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: scale(1.05);
+}
+
+.contact-card p {
+    margin-bottom: 12px;
+    color: #FFFFFF;
+}
+
+
+
+
+@media (max-width: 768px) {
+    nav {
+        padding: 20px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .hero-image img {
+        width: 250px;
+    }
+
+    #about,
+    #contact {
+        padding: 60px 20px;
+    }
+}
